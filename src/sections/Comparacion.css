@@ -1,0 +1,23 @@
+.Container--Comparacion {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+
+.Container--Region {
+	margin-bottom: 70px;
+	width: 100%;
+}
+
+.Prueba {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	width: 100%;
+}
