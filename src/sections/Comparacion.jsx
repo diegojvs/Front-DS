@@ -131,6 +131,36 @@ const Comparacion = () => {
 								})}
 							</div>
 							<p>Promedio de error: {item.PromedioError}%</p>
+							<p>Saturación real:</p>
+							<div className="Prueba">
+								{item?.SaturacionReal.map((dia, index) => {
+									return (
+										<span>
+											Día {index + 1}: {dia.toFixed(3)}%
+										</span>
+									);
+								})}
+							</div>
+							<p>Saturación proyectada:</p>
+							<div className="Prueba">
+								{item?.SaturacionProyectada.map((dia, index) => {
+									return (
+										<span>
+											Día {index + 1}: {dia.toFixed(3)}%
+										</span>
+									);
+								})}
+							</div>
+							<p>Camas necesarias:</p>
+							<div className="Prueba">
+								{item?.CamasNecesarias.map((dia, index) => {
+									return (
+										<span>
+											Día {index + 1}: {dia}
+										</span>
+									);
+								})}
+							</div>
 						</div>
 					</div>
 				);
